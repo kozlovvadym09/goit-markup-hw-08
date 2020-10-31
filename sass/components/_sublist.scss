@@ -1,0 +1,14 @@
+.sublist {
+   display: flex;
+   margin-left: auto;
+   &-item-mail {
+    display: flex;
+  }
+   &-item-tel {
+    display: flex;
+    margin-left: 30px;
+  }
+ }
+ 
+ 
+ 

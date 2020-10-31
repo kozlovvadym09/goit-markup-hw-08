@@ -1,0 +1,131 @@
+.modal-form {
+   display: flex;
+   flex-direction: column;
+
+   &-field {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1,167;
+    letter-spacing: 0.01em;
+    color: $primary-text-color;
+    margin-bottom: 10px;
+  }
+
+   &-input {
+    display: block;
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding-left: 42px;
+  }
+
+  &-input:focus,
+  &-massage:focus {
+    outline: none;
+    border: 1px solid $bright-accent-color;
+  }
+  &-massage {
+    height: 120px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    resize: none;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1,141;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+    padding: 12px 16px;
+    margin-top: 4px;
+    margin-bottom: 20px;
+  }
+
+  &-button {
+    width: 200px;
+    height: 50px;
+    color: $titel-accent-bg-color;
+    background-color: $bright-accent-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: 1px solid $bg-accent-color;
+    border-radius: 4px;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      background-color: $bg-accent-color;
+    }
+  }
+  &-policy-label {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1,713;
+    letter-spacing: 0.03em;
+    color: $primary-text-color;
+    margin-bottom: 30px;
+    &::before {
+     content:"";
+     display: flex;
+     width: 16px;
+     height: 15px;
+     border-radius: 2px;
+     border: 2px solid $titel-text-color;
+     margin-right: 7px;
+   }
+   .modal-form-policy:checked + &::before {
+     background-color: $bright-accent-color;
+     border-color: $bright-accent-color;
+     background-image: url(../images/check-mark-icon.svg);
+   }
+  }
+ }
+
+ .headline-modal {
+   margin-bottom: 12px;
+   font-weight: 700;
+   font-size: 20px;
+   line-height: 1,151;
+   text-align: center;
+   letter-spacing: 0.03em;
+   color: $titel-text-color;
+ }
+
+ .form-field-wraper {
+   position: relative;
+   display: block;
+   margin-top: 4px;
+ }
+
+ .modal-icon-svg {
+   position: absolute;
+   top: 50%;
+   left: 15px;
+   transform: translateY(-50%);
+   .modal-form-input:focus + & {
+    fill: $bright-accent-color;
+  }
+ }
+
+ .coment-titel-wraper {
+   display: inline-block;
+   font-weight: 400;
+   font-size: 12px;
+   line-height: 1,167;
+   letter-spacing: 0.01em;
+   color: $primary-text-color;
+ }
+
+ .modal-link-accent-color {
+   display: inline-block;
+   color: $bright-accent-color;
+ }
+ 
+ .submit-button-wraper {
+   display: flex;
+   justify-content: center; 
+ }
+
+ 

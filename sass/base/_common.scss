@@ -1,0 +1,45 @@
+html {
+   box-sizing: border-box;
+ }
+ 
+ *,
+ *::before,
+ *::after {
+   box-sizing: inherit;
+   margin: 0;
+   padding: 0;
+ }
+ 
+ body {
+   font-family: $main-font;
+ }
+ 
+ img {
+   display: block;
+ }
+ 
+ .list {
+   list-style: none;
+ }
+ .link {
+   text-decoration: none;
+ }
+ 
+ .background-color {
+   color: $primary-bg-color;
+ }
+ .container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+  .header & {
+   display: flex;
+ }
+  .hero & {
+   text-align: center;
+   padding: 200px 0;
+ }
+}
+ 
+ 
+ 
