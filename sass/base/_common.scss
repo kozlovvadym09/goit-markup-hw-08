@@ -28,17 +28,57 @@ html {
  .background-color {
    color: $primary-bg-color;
  }
- .container {
+
+
+ /*.container {
+   padding: 0 15px;      
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+    margin: 0 auto;
+  } 
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding: 0 15px;
+  }  
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+
+    .header & {
+      display: flex;
+    } 
+    .hero & {
+      text-align: center;
+      padding: 200px 0; 
+    }
+  }
+}*/
+
+ 
+
+
+
+
+.container {
   width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
-  .header & {
-   display: flex;
- }
-  .hero & {
-   text-align: center;
-   padding: 200px 0;
- }
+}
+
+
+.header .container {
+  display: flex;
+}
+
+.hero .container {
+  text-align: center;
+  padding: 200px 0;
 }
  
  
