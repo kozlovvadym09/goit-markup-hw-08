@@ -1,4 +1,4 @@
-.sublist {
+/*.sublist {
    display: flex;
    margin-left: auto;
    &-item-mail {
@@ -8,7 +8,41 @@
     display: flex;
     margin-left: 30px;
   }
+ }*/
+ 
+@media screen and (min-width: 480px) {
+  .sublist {
+    display: none;
+  }
  }
+
+@media screen and (min-width: 768px) {
+  .sublist {
+    display: block;
+    
+    margin-left: auto;
+    &-item-mail {
+     display: block;
+   }
+    &-item-tel {
+     display: block;
+     
+   }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .sublist {
+    display: flex;
+    margin-left: auto;
+    &-item-mail {
+     display: flex;
+   }
+    &-item-tel {
+     display: flex;
+     margin-left: 30px;
+   }
+  }
+}
  
  
  
