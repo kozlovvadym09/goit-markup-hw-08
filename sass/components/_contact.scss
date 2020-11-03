@@ -1,3 +1,4 @@
+/*--Header Contact--*/
 .contact {
   &-bright-bg-mail,
   &-bright-bg-tel {
@@ -30,6 +31,46 @@
   &-bright-bg-tel:focus .icon-smartphone-svg {
     fill: $bright-accent-color;
   }
+}
+
+
+@media screen and (min-width: 480px) {
+  .contact {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contact {
+    &-bright-bg-mail,
+    &-bright-bg-tel {
+      padding: 10px 0;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 1.167;  
+    }
+  }
+}
+/*@media screen and (min-width: 1200px) {
+  .contact{
+
+  }
+}*/
+
+.icon {
+  &-envelope-svg,
+  &-smartphone-svg {
+  margin-right: 10px;
+  fill: $primary-text-color;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+/*--Footer Cotact--*/
+
+.contact {
   &-mail,
   &-tel {
     color: $secondary-text-color;
@@ -65,16 +106,8 @@
     color: $bright-accent-color;
   }
 }
-.icon {
-  &-envelope-svg,
-  &-smartphone-svg {
-    margin-right: 10px;
-    fill: $primary-text-color;
-    transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-}
+
+ 
 
 
 

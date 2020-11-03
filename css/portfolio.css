@@ -76,17 +76,6 @@ img {
 }
 
 /*components*/
-/*.sublist {
-   display: flex;
-   margin-left: auto;
-   &-item-mail {
-    display: flex;
-  }
-   &-item-tel {
-    display: flex;
-    margin-left: 30px;
-  }
- }*/
 @media screen and (min-width: 480px) {
   .sublist {
     display: none;
@@ -95,14 +84,14 @@ img {
 
 @media screen and (min-width: 768px) {
   .sublist {
-    display: block;
-    margin-left: auto;
+    display: inline-block;
+    padding: 0;
   }
   .sublist-item-mail {
-    display: block;
+    display: flex;
   }
   .sublist-item-tel {
-    display: block;
+    display: flex;
   }
 }
 
@@ -120,6 +109,7 @@ img {
   }
 }
 
+/*--Header Contact--*/
 .contact-bright-bg-mail, .contact-bright-bg-tel {
   display: flex;
   align-items: center;
@@ -149,6 +139,35 @@ img {
   fill: #2196f3;
 }
 
+@media screen and (min-width: 480px) {
+  .contact {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contact-bright-bg-mail, .contact-bright-bg-tel {
+    padding: 10px 0;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.167;
+  }
+}
+
+/*@media screen and (min-width: 1200px) {
+  .contact{
+
+  }
+}*/
+.icon-envelope-svg, .icon-smartphone-svg {
+  margin-right: 10px;
+  fill: #757575;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/*--Footer Cotact--*/
 .contact-mail, .contact-tel {
   color: rgba(255, 255, 255, 0.6);
 }
@@ -176,14 +195,6 @@ img {
 
 .contact-map:hover, .contact-map:focus, .contact-mail:hover, .contact-mail:focus, .contact-tel:hover, .contact-tel:focus {
   color: #2196f3;
-}
-
-.icon-envelope-svg, .icon-smartphone-svg {
-  margin-right: 10px;
-  fill: #757575;
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .option-button {
@@ -486,12 +497,6 @@ img {
   background-color: #ffffff;
 }
 
-/*@media screen and (min-width: 480px) {
-  .header {
-    font-size: 24px;
-    line-height: 1.175;
-  }
-}*/
 .logo-header {
   font-family: Raleway, sans-serif;
   font-weight: 700;
@@ -501,6 +506,8 @@ img {
 
 @media screen and (min-width: 480px) {
   .logo-header {
+    padding-top: 16px;
+    padding-bottom: 16px;
     font-size: 24px;
     line-height: 1.175;
   }
