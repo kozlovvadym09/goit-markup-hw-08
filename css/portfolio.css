@@ -497,6 +497,7 @@ img {
 
 /*layout*/
 .header {
+  position: relative;
   padding: 0;
   border: 1px solid #ECECEC;
   background-color: #ffffff;
