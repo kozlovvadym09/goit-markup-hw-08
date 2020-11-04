@@ -1,3 +1,9 @@
+.sublist {
+  display: inline-block;
+    padding: 0;
+}
+
+
 @media screen and (min-width: 480px) {
   .sublist {
     display: none;
@@ -6,9 +12,9 @@
 
 @media screen and (min-width: 768px) {
   .sublist {
-    
     display: inline-block;
     padding: 0;
+
     &-item-mail {
      display: flex;
      

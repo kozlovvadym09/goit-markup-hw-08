@@ -1,5 +1,6 @@
 
 .header {
+  
   padding: 0;
   border: 1px solid $border-line-color;
   background-color: $titel-accent-bg-color;
@@ -15,6 +16,7 @@
 }
 @media screen and (min-width: 480px) {
   .logo-header {
+    margin-right: 276px;
     padding-top: 16px;
     padding-bottom: 16px;
     font-size: 24px;
