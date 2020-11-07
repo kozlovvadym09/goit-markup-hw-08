@@ -1,34 +1,30 @@
 .sublist {
-  display: inline-block;
+    display: flex;
     padding: 0;
 }
 
 
 @media screen and (min-width: 480px) {
   .sublist {
-    display: none;
+    display: inline-block;
+    align-items: center;
+    
   }
  }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) and (max-width:1199px) {
   .sublist {
     display: inline-block;
     padding: 0;
-
+    margin-left: 84px;
     &-item-mail {
-     display: flex;
-     
-   }
-    &-item-tel {
-     display: flex;
-    
-   }
+      margin-bottom: 10px;
+    }
   }
 }
 
 @media screen and (min-width: 1200px) {
   .sublist {
-    
     display: flex;
     margin-left: auto;
     &-item-mail {

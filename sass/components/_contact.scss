@@ -4,11 +4,6 @@
   &-bright-bg-tel {
     display: flex;
     align-items:center; 
-    padding: 32px 0;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.143;
-    letter-spacing: 0.02em;
     color: $primary-text-color;
     transition-property: color;
     transition-duration: 250ms;
@@ -36,7 +31,10 @@
 
 @media screen and (min-width: 480px) {
   .contact {
-    display: none;
+    
+    font-size: 18px;
+    line-height: 1.167;
+    letter-spacing: 0.02em;
   }
 }
 
@@ -44,18 +42,28 @@
   .contact {
     &-bright-bg-mail,
     &-bright-bg-tel {
-      padding: 10px 0;
+      padding: 0;
       font-weight: 500;
       font-size: 12px;
-      line-height: 1.167;  
+      line-height: 1.167;
+      letter-spacing: 0.02em;  
     }
   }
 }
-/*@media screen and (min-width: 1200px) {
-  .contact{
 
+@media screen and (min-width: 1200px) {
+  .contact {
+    &-bright-bg-mail,
+    &-bright-bg-tel {
+      padding: 32px 0;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.143;
+      letter-spacing: 0.02em;
+    }
   }
-}*/
+}
+
 
 .icon {
   &-envelope-svg,
