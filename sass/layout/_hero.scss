@@ -1,4 +1,60 @@
 .hero {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: $hero-footer-bg-color;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  & .hero-headline {
+    padding-top: 118px;
+    margin-bottom: 30px;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.616;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: $titel-accent-bg-color;
+    
+  }
+}
+@media screen and (min-width: 480px) {
+  .hero {
+    max-width: 480px;
+    min-height: 400px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/bg-mobile.jpg);
+    & .hero-headline {
+      padding-top: 118px;
+    }
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .hero {
+    max-width: 768px;
+    min-height: 400px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/bg-tablet.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    max-width: 1600px;
+    height: 600px;
+    background-color: $hero-footer-bg-color;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/bg-desktop.jpg);
+    & .hero-headline {
+      padding-top: 200px;
+      font-weight: 900;
+      font-size: 44px;
+      line-height: 1.364;
+    }
+  }
+}
+
+/*-- To delete today --*/
+
+/*.hero {
    max-width: 1600px;
    height: 600px;
    margin-left: auto;
@@ -19,7 +75,7 @@
     color: $titel-accent-bg-color;
     margin-bottom: 30px;
   }
- }
+}*/
  
  
  

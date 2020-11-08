@@ -2,7 +2,7 @@
 .header {
   position: relative;
   padding: 0;
-  border: 1px solid $border-line-color;
+  border-bottom: 1px solid $border-line-color;
   background-color: $titel-accent-bg-color;
 }
 
@@ -44,9 +44,10 @@
 
 
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (min-width: 480px)  and (max-width: 767px) {
   .navigation {
-      display: flex;
+    display: flex;
+    align-items: center;
     
   }
 
@@ -62,6 +63,7 @@
     }
     &-list-item {
       position: relative;
+
     }
     &-list-item:not(:last-child) {
       margin-right: 50px;

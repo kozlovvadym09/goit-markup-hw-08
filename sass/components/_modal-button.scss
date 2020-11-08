@@ -1,4 +1,30 @@
 .modal-button {
+  display: inline-block;
+  text-align: center;
+  padding: 10px 32px;
+  font-family: $main-font;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  color: $titel-accent-bg-color;
+  background-color: $bright-accent-color;
+  border: 1px solid transparent;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  min-width: 200px;
+  min-height: 50px;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: $bg-accent-color;
+  }
+}
+
+
+/*.modal-button {
    display: inline-block;
    padding: 10px 32px;
    font-family: $main-font;
@@ -21,4 +47,4 @@
    &:focus {
     background-color: $bg-accent-color;
   }
- }
+ }*/

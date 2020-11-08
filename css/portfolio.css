@@ -41,12 +41,22 @@ img {
     width: 480px;
     margin: 0 auto;
   }
+  .hero .container {
+    display: inline-block;
+    text-align: center;
+    padding: 0;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .container {
     position: relative;
     width: 768px;
+  }
+  .hero .container {
+    display: inline-block;
+    text-align: center;
+    padding: 0;
   }
 }
 
@@ -58,8 +68,9 @@ img {
     display: flex;
   }
   .hero .container {
+    display: inline-block;
     text-align: center;
-    padding: 200px 0;
+    padding: 0;
   }
 }
 
@@ -93,21 +104,6 @@ img {
     display: inline-block;
     padding: 0;
     margin-left: 84px;
-    /*position: absolute;
-    top: 21px;
-    right: 15px;
-
-    display:block;
-    padding: 0;
-
-    &-item-mail {
-     display: flex;
-     margin-bottom: 10px;  
-   }
-
-    &-item-tel {
-     display: flex; 
-   }*/
   }
   .sublist-item-mail {
     margin-bottom: 10px;
@@ -516,7 +512,7 @@ img {
 .header {
   position: relative;
   padding: 0;
-  border: 1px solid #ECECEC;
+  border-bottom: 1px solid #ECECEC;
   background-color: #ffffff;
 }
 
@@ -558,6 +554,7 @@ img {
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .navigation {
     display: flex;
+    align-items: center;
   }
 }
 
