@@ -57,26 +57,21 @@
    }
    .menu-container.is-open {
       display: block;
-   }
-   
-   
+   }   
 }
 
 
 @media screen and (min-width: 768px) {
    .menu-container {
-      display: none;
+      display: flex;
+      align-items: center;
    }
-   .menu-container.is-open {
-      display: none;
-   }
+
 }
 
 @media screen and (min-width: 1200px) {
    .menu-container {
-      display: none;
+      display: flex;
    }
-   .menu-container.is-open {
-      display: none;
-   }
+   
 }

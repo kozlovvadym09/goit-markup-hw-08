@@ -4,10 +4,19 @@
 }
 
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .sublist {
     display: inline-block;
     align-items: center;
+    margin-top: 60px;
+    
+    &-item-mail {
+      margin-bottom: 16px;
+    }
+    &-item-tel {
+      display: inline-block;
+      align-items: center;
+    }
     
   }
  }
@@ -15,18 +24,17 @@
 @media screen and (min-width: 767px) and (max-width:1199px) {
   .sublist {
     display: inline-block;
-    padding: 0;
     margin-left: 84px;
     &-item-mail {
       margin-bottom: 10px;
-    }
+    }  
   }
 }
 
 @media screen and (min-width: 1200px) {
   .sublist {
     display: flex;
-    margin-left: auto;
+    margin-left: 305px;
     &-item-mail {
      display: flex;
    }
