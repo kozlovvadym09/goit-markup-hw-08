@@ -29,13 +29,17 @@ html {
    color: $primary-bg-color;
  }
 
+/*--Main Container--*/
 
  .container {
   padding: 0 15px;     
 }
 
+/*--Mobile--*/
+
 @media screen and (min-width: 480px) {
   .container {
+    
     width: 480px;
     margin: 0 auto;
     .hero & {
@@ -45,6 +49,9 @@ html {
     }
   } 
 }
+
+/*--Tablet--*/
+
 @media screen and (min-width: 768px) {
   .container {
     position: relative;
@@ -56,16 +63,20 @@ html {
     }
   }  
 }
+
+/*--Desktop--*/
+
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
 
     .header & {
       display: flex;
-    } 
+    }
+     
     .hero & {
-      display: inline-block;
-      text-align: center;
+      display: block;
+      margin: 0 auto;
       padding: 0; 
     }
   }

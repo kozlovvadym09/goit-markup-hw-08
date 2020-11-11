@@ -1,4 +1,4 @@
-
+/*--Menu Buttons-Close & Open--*/
 .menu-buttons-burger {
    display: inline-flex;
    margin: 0;
@@ -7,8 +7,6 @@
    background-color: transparent;
    outline: none;
 } 
-
-
 
 @media screen and (min-width: 480px) {
    .menu-buttons-burger .icon-cross {
@@ -23,13 +21,10 @@
    
 }
 
-
-
 @media screen and (min-width: 768px) {
    .menu-buttons-burger {
       display: none;
-   }
-   
+   }   
 }
 
 @media screen and (min-width: 1200px) {
@@ -38,14 +33,13 @@
    }
 }
 
-
-
+/*--Menu Container--*/
 
 @media screen and (max-width: 767px) {
    .menu-container {
       display: none;
       position: absolute;
-      height: 453px;  
+      height: 393px;  
       top: 100%;
       left: 0;
       width: 100%;

@@ -1,21 +1,49 @@
-.team {
-  background-color: $secondary-bg-color;
-  padding-top: 94px;
-  padding-bottom: 94px;
-  &-staff {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.167;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--titel-text-color);
-    margin-bottom: 50px;
+
+/*--Team: Mobile & Tablet--*/
+@media screen and (max-width: 1199px) {
+  .team {
+    background-color: $secondary-bg-color;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    &-staff {
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 1.178;
+      text-align: center;
+      letter-spacing: 0.03em;
+      color: var(--titel-text-color);
+      margin-bottom: 30px;
+    }
   }
 }
 
+/*--Team: Desktop--*/
+
+@media screen and (min-width: 1200px) {
+  .team {
+    background-color: $secondary-bg-color;
+    padding-top: 94px;
+    padding-bottom: 94px;
+    &-staff {
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 1.167;
+      text-align: center;
+      letter-spacing: 0.03em;
+      color: var(--titel-text-color);
+      margin-bottom: 50px;
+    }
+  }
+}
+
+
+
+/*--Staff: Mobile--*/
+
 .staff {
   &-list {
-    display: flex;
+    display: block;
+
   }
   &-info {
     padding: 30px 10px;
@@ -40,12 +68,61 @@
   }
 }
 
-.team-list-item {
+/*--team-list-item: Mobile--*/
+
+@media screen and (max-width: 767px) {
+  .team-list-item {
+    display: block;
+    width: 450px;
+    height: 622px;
+    background: $titel-accent-bg-color;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    &:not(:last-child) {
+     margin-bottom: 30px;
+    }
+  }
+}
+
+/*--team-list-item: Tablet--*/
+
+/*--team-list-item: Desktop--*/
+
+
+
+/*.staff {
+  &-list {
+    display: flex;
+  }
+  &-info {
+    padding: 30px 10px;
+  }
+  &-name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.187;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: $titel-text-color;
+    margin-bottom: 10px;
+  }
+  &-spetiality {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.187;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: $primary-text-color;
+    margin-bottom: 16px;
+  }
+}*/
+
+/*.team-list-item {
   background: $titel-accent-bg-color;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   &:not(:last-child) {
     margin-right: 30px;
   }
-}
+}*/
 
