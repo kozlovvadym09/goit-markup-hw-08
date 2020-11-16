@@ -35,7 +35,7 @@ html {
   padding: 0 15px;     
 }
 
-/*--Mobile--*/
+/*--container: Mobile--*/
 
 @media screen and (min-width: 480px) {
   .container {
@@ -50,7 +50,7 @@ html {
   } 
 }
 
-/*--Tablet--*/
+/*--container: Tablet--*/
 
 @media screen and (min-width: 768px) {
   .container {
@@ -64,7 +64,7 @@ html {
   }  
 }
 
-/*--Desktop--*/
+/*--container: Desktop--*/
 
 @media screen and (min-width: 1200px) {
   .container {

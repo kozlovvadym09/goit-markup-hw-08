@@ -1,3 +1,4 @@
+/*--Header: COMMON--*/
 
 .header {
   position: fixed;
@@ -10,7 +11,7 @@
   background-color: $titel-accent-bg-color;
 }
 
-
+/*--Logo-header: COMMON--*/
 .logo-header {
   font-family: $secondary-font;
   font-weight: 700;
@@ -18,6 +19,7 @@
   color: $dark-accent-color;
   
 }
+/*--Logo-header: Mobile--*/
 
 @media screen and (min-width: 480px) {
   .logo-header {
@@ -29,26 +31,34 @@
   }
 }
 
+/*--Logo-header: Tablet--*/
+
 @media screen and (min-width: 768px) {
   .logo-header {
     margin-right: 88px;
   }
 }
+
+/*--Logo-header: Desktop--*/
+
 @media screen and (min-width: 1200px) {
   .logo-header {
     font-size: 26px;
     line-height: 1.191;
     margin-right: 94px;
   }
-}
+} 
+
+/*--Logo-accent: COMMON--*/
 
 .logo-accent {
   color: $bright-accent-color;
 }
 
 
+/*--Navigation: Mobile--*/
 
-@media screen and (min-width: 480px)  and (max-width: 767px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .navigation {
     display: flex;
     
@@ -64,11 +74,11 @@
       margin-bottom: 40px;
     }
   }
-  
-
 }
 
-@media screen and (min-width: 768px) {
+/*--Navigation: Tablet--*/
+
+@media screen and (min-width: 767px) {
   .navigation {
       display: flex;
       align-items: center;
@@ -87,6 +97,8 @@
   }
 }
 
+/*--Navigation: Desktop--*/
+
 @media screen and (min-width: 1200px) {
   .navigation {
       display: flex;
@@ -101,6 +113,8 @@
     
   }
 }
+
+/*--Navigation-list-link: COMMON--*/
 
 .navigation-list-link {
   display: inline-block;
@@ -139,6 +153,8 @@
   }
 }
 
+/*--Navigation-list-link: Mobile--*/
+
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .navigation-list-link {
     position: relative;
@@ -160,6 +176,7 @@
    }
 } 
 
+/*--Navigation-list-link: Tablet--*/
 
 @media screen and (min-width: 767px) {
   .navigation-list-link {
@@ -170,6 +187,8 @@
      
   }
 }
+
+/*--Navigation-list-link: Desktop--*/
 
 @media screen and (min-width: 1199px) {
   .navigation-list-link {
