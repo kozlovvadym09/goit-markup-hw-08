@@ -1,4 +1,17 @@
-.mailing-form {
+/*--Mailing-form: COMMON--*/
+
+/*--Mailing-form: Mobile--*/
+
+@media screen and (minwidth: 480px) {
+  .mailing-form-wraper {
+    display:flex; 
+  }
+
+  
+}
+
+
+/*.mailing-form {
   display: flex; 
   
   &-wraper {
@@ -51,14 +64,14 @@
     }
     
   }
-}
-.button-wraper {
+}*/
+/*.button-wraper {
   position: relative;
   display: flex;
-}
-.submit-icon-svg {
+}*/
+/*.submit-icon-svg {
   position: absolute;
   top: 13px;
   right: 28px;
   fill: $titel-accent-bg-color;
-}
+}*/

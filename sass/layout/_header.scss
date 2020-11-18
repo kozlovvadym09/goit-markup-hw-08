@@ -1,14 +1,19 @@
 /*--Header: COMMON--*/
 
 .header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 10;
   padding: 0;
   border-bottom: 1px solid $border-line-color;
   background-color: $titel-accent-bg-color;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+  }
 }
 
 /*--Logo-header: COMMON--*/
@@ -58,7 +63,7 @@
 
 /*--Navigation: Mobile--*/
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .navigation {
     display: flex;
     

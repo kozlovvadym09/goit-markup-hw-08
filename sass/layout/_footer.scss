@@ -1,15 +1,83 @@
+/*--Footer: COMMON--*/
 .footer {
    padding: 60px 0;
    background-color: $hero-footer-bg-color;
- }
+}
+
+
+
+/*--Logo-address-footer: Mobile--*/
+ @media screen and (max-width: 767px) {
+  .logo-address-footer {
+    text-align: center;
+    margin-bottom: 60px; 
+  }
+}
+
+/*--Logo-address-footer: Tablet--*/
+@media scren and (min-width: 768px) {
+  .logo-address-footer {
+  
+    text-align: center;
+    margin-bottom: 60px; 
+  }
+}
+
+
+
+/*--Logo-address-footer: Desktop--*/
+@media screen and (min-width: 1200px) {
+  .logo-address-footer {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
  
- .logo-address-footer {
+/*--Logo-footer: COMMON--*/
+.logo-footer {
+  display: inline-block;
+  margin-bottom: 20px;
+  font-family: $secondary-font;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: $titel-accent-bg-color;  
+}
+
+/*--Logo-footer: Mobile & Tablet--*/
+ @media screen and (min-width: 480px) {
+  .logo-footer {
+    font-size: 24px;
+    line-height: 1.166; 
+  }
+}
+
+
+/*--Logo-footer: Desktop--*/
+@media screen and (min-width: 1200px) {
+  .logo-footer {
+    font-size: 26px;
+    line-height: 1.191;
+  }
+}
+
+
+
+
+
+/*.footer {
+  padding: 60px 0;
+  background-color: $hero-footer-bg-color; 
+}*/
+ 
+ /*.logo-address-footer {
    display: inline-flex;
    flex-direction: column;
    align-items: flex-start;
- }
+ }*/
  
- .logo-footer {
+ /*.logo-footer {
    display: inline-block;
    margin-bottom: 20px;
    font-family: $secondary-font;
@@ -18,4 +86,4 @@
    line-height: 1.191;
    letter-spacing: 0.03em;
    color: $titel-accent-bg-color;  
- }
+ }*/

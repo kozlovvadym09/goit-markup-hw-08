@@ -37,11 +37,11 @@ html {
 
 /*--container: Mobile--*/
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 480px) {
   .container {
-    
     width: 480px;
     margin: 0 auto;
+
     .hero & {
       display: inline-block;
       text-align: center;
