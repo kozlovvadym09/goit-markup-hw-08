@@ -1,14 +1,144 @@
-/*--Mailing-form: COMMON--*/
-
-/*--Mailing-form: Mobile--*/
-
-@media screen and (minwidth: 480px) {
+/*--Mailing-form-wraper: Mobile--*/
+@media screen and (max-width: 767px){
   .mailing-form-wraper {
-    display:flex; 
+    display: block;
+    text-align: center;
   }
+}
 
+
+/*--Mailing-form-wraper: Tablet--*/
+@media screen and (min-width: 768px) {
+  .mailing-form-wraper {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
   
 }
+/*--Mailing-form-wraper: Desktop--*/
+@media screen and (min-width: 1200px) {
+  .mailing-form-wraper {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 93px;
+  }
+}
+
+/*--Mailing-form: COMMON--*/
+
+/*--Mailing-form: Mobile & Tablet--*/
+@media screen and (min-width: 480px) {
+  .mailing-form {
+    display: block;
+  }
+}
+
+/*--Mailing-form: Tablet--*/
+@media screen and (max-width: 1199px) {
+  .mailing-form {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/*--Mailing-form: Desktop--*/
+@media screen and (min-width: 1200px) {
+  .mailing-form {
+    display: flex;
+  }
+}
+
+
+/*--Mailing-form-input: COMMON--*/
+.mailing-form-input {
+  padding-left: 16px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.6);
+
+  &-input:focus {
+    outline: none;
+  }
+}
+
+
+
+/*--Mailing-form-input: Mobile & Tablet--*/
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .mailing-form-input {
+    width: 450px;
+    margin-bottom: 20px;
+  }
+}
+
+/*--Mailing-form-input: Desktop--*/
+@media screen and (min-width: 1200px) {
+  .mailing-form-input {
+    width: 358px;
+  }
+  .mailing-form-input:not(:last-child) {
+    margin-right: 12px;
+  }
+}
+
+/*--Mailing-form-submit: COMMON--*/
+.mailing-form-submit {
+  display: flex;
+  align-items: center;
+  padding-left: 29px;
+  width: 200px;
+  height: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1,876;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: $titel-accent-bg-color;
+  border-radius: 4px;
+  background-color: $bright-accent-color;
+  border: 1px solid $bg-accent-color;
+  outline: none;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: $bg-accent-color; 
+  }
+}
+
+
+
+
+
+
+
+/*--Button-wraper: COMMON--*/
+.button-wraper {
+  position: relative;
+  display: flex;
+}
+
+/*--Submit-icon-svg: COMMON--*/
+.submit-icon-svg {
+  position: absolute;
+  top: 13px;
+  right: 28px;
+  fill: $titel-accent-bg-color;
+}
+
 
 
 /*.mailing-form {
