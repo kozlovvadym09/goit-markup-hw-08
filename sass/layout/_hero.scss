@@ -21,8 +21,9 @@
 }
 /*--Mobile--*/
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 480px) {
   .hero {
+    margin-top: 60px;
     max-width: 480px;
     min-height: 400px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/bg-mobile.jpg); 

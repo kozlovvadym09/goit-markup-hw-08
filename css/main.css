@@ -108,14 +108,14 @@ img {
   outline: none;
 }
 
-@media screen and (min-width: 320px) {
-  .menu-buttons-burger .icon-cross {
+@media screen and (min-width: 480px) {
+  .menu-buttons-burger .icon-menu {
     display: none;
   }
-  .menu-buttons-burger.is-open .icon-cross {
+  .menu-buttons-burger.is-open .icon-menu {
     display: block;
   }
-  .menu-buttons-burger.is-open .icon-menu {
+  .menu-buttons-burger.is-open .icon-cross {
     display: none;
   }
 }
@@ -893,7 +893,7 @@ img {
   background-color: #ffffff;
 }
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .header {
     position: fixed;
     top: 0;
@@ -1094,8 +1094,9 @@ img {
 }
 
 /*--Mobile--*/
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 480px) {
   .hero {
+    margin-top: 60px;
     max-width: 480px;
     min-height: 400px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/bg-mobile.jpg);
