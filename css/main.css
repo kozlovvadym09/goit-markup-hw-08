@@ -118,6 +118,10 @@ img {
   .menu-buttons-burger.is-open .icon-cross {
     display: none;
   }
+  .menu-buttons-burger:hover .menu-buttons-icon,
+  .menu-buttons-burger:active .menu-buttons-icon {
+    fill: #2196f3;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -234,7 +238,7 @@ img {
   fill: #2196f3;
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 480px) {
   .contact {
     font-size: 18px;
     line-height: 1.167;
@@ -325,13 +329,12 @@ img {
   background-color: #188ce8;
 }
 
+/*--Modal: COMMON--*/
 .modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
+  position: relative;
+  width: 450px;
+  height: 609px;
   transform: translate(-50%, -50%) scale(1);
-  width: 528px;
-  height: 581px;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -339,6 +342,18 @@ img {
   padding: 40px;
 }
 
+/*--Modal: Desktop--*/
+@media screen and (min-width: 1200px) {
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 528px;
+    height: 581px;
+  }
+}
+
+/*--Close-button: COMMON--*/
 .close-button {
   position: absolute;
   top: 8px;
@@ -358,6 +373,7 @@ img {
   fill: #2196f3;
 }
 
+/*--Icon-close-button: COMMON--*/
 .icon-close-button {
   position: absolute;
   top: 50%;
@@ -367,12 +383,14 @@ img {
 
 .backdrop {
   position: fixed;
-  top: 0;
+  top: 94px;
   left: 0;
+  padding: 94px 15px;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   transition: all 500ms linear;
+  overflow-y: scroll;
 }
 
 .backdrop.is-hidden {
@@ -387,6 +405,66 @@ img {
   transition: all 500ms linear 0ms;
 }
 
+/*.modal {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%) scale(1);
+   width: 528px;
+   height: 581px;
+   background: $titel-accent-bg-color;
+   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+   border-radius: 4px;
+   transition: all 500ms linear 250ms;
+   padding: 40px;
+   
+ }*/
+/*.close-button {
+   position: absolute;
+   top: 8px;
+   right: 8px;
+   width: 30px;
+   height: 30px;
+   background-color: $titel-accent-bg-color;
+   border: 1px solid rgba(0, 0, 0, 0.1);
+   border-radius:50%;
+   cursor: pointer;
+   transition-property: fill;
+   transition-duration: 250ms;
+   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+   &:hover,
+   &:focus {
+    fill: $bright-accent-color;
+  }
+ }*/
+/*.icon-close-button {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+ }*/
+/*--Backdrop: COMMON--*/
+/*--Backdrop: Tablet--*/
+/*--Backdrop: DEsktop--*/
+/*.backdrop {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.2);
+   transition: all 500ms linear;
+   &.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: all 500ms linear 500ms;
+    & .modal {
+      transform: translate(-50%, -50%) scale(0);
+      transition: all 500ms linear 0ms;
+    } 
+  }
+ }*/
 .modal-form {
   display: flex;
   flex-direction: column;
@@ -655,34 +733,6 @@ img {
   height: 20px;
 }
 
-/*.social-list-footer {
-   display: flex; 
- }*/
-/*.social-item-footer:not(:last-child) {
-   margin-right: 10px;
- }*/
-/*.social-link-footer {
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   width: 44px;
-   height: 44px;
-   border-radius: 50%;
-   background-color: rgba(255, 255, 255, 0.1);
-   transition-property: background-color;
-   transition-duration: 250ms;
-   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-   &:hover, 
-   &:focus {
-   background-color: $bright-accent-color;
-  }
-   &-svg {
-   fill: $titel-accent-bg-color;
-   width: 20px;
-   height: 20px;
-  }
-
-}*/
 /*--Mailing-form-wraper: Mobile--*/
 @media screen and (max-width: 767px) {
   .mailing-form-wraper {
@@ -811,86 +861,17 @@ img {
   fill: #ffffff;
 }
 
-/*.mailing-form {
-  display: flex; 
-  
-  &-wraper {
-    display: inline-flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-left: 93px;
-  }
-  &-input {
-    padding-left: 16px;
-    width: 358px;
-    height: 50px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    border-radius: 4px;
-    background-color: transparent;
-    color: rgba(255, 255, 255, 0.6);
-  }
-
-  &-input:not(:last-child) {
-    margin-right: 12px;
-    }
-
-  &-input:focus {
-      outline: none;
-    }
-    
-  &-submit {
-    display: flex;
-    align-items: center;
-    padding-left: 29px;
-    width: 200px;
-    height: 50px;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1,876;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.06em;
-    color: $titel-accent-bg-color;
-    border-radius: 4px;
-    background-color: $bright-accent-color;
-    border: 1px solid $bg-accent-color;
-    outline: none;
-    transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    &:hover,
-    &:focus {
-      background-color: $bg-accent-color; 
-    }
-    
-  }
-}*/
-/*.button-wraper {
-  position: relative;
-  display: flex;
-}*/
-/*.submit-icon-svg {
-  position: absolute;
-  top: 13px;
-  right: 28px;
-  fill: $titel-accent-bg-color;
-}*/
 /*layout*/
 /*--Header: COMMON--*/
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 5;
   padding: 0;
   border-bottom: 1px solid #ECECEC;
   background-color: #ffffff;
-}
-
-@media screen and (max-width: 767px) {
-  .header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 10;
-  }
 }
 
 /*--Logo-header: COMMON--*/
@@ -902,7 +883,7 @@ img {
 }
 
 /*--Logo-header: Mobile--*/
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 480px) {
   .logo-header {
     margin-right: 276px;
     padding-top: 16px;
@@ -1021,7 +1002,7 @@ img {
 }
 
 /*--Navigation-list-link: Mobile--*/
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .navigation-list-link {
     position: relative;
     display: inline-block;
@@ -1102,6 +1083,7 @@ img {
 /*--Tablet--*/
 @media screen and (min-width: 767px) {
   .hero {
+    margin-top: 80px;
     max-width: 768px;
     min-height: 400px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/bg-tablet.jpg);
@@ -1117,6 +1099,7 @@ img {
 /*--Desktop--*/
 @media screen and (min-width: 1200px) {
   .hero {
+    margin-top: 80px;
     max-width: 1600px;
     height: 600px;
     background-color: #2f303a;

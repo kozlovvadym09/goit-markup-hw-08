@@ -1,19 +1,14 @@
 /*--Header: COMMON--*/
 
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 5;
   padding: 0;
   border-bottom: 1px solid $border-line-color;
   background-color: $titel-accent-bg-color;
-}
-
-@media screen and (max-width: 767px) {
-  .header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 10;
-  }
 }
 
 /*--Logo-header: COMMON--*/
@@ -26,7 +21,7 @@
 }
 /*--Logo-header: Mobile--*/
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 480px) {
   .logo-header {
     margin-right: 276px;
     padding-top: 16px;
@@ -66,12 +61,9 @@
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .navigation {
     display: flex;
-    
-
     align-items: center;
 
     &-list-item { 
-      
       position: relative;
     }
 
@@ -92,7 +84,6 @@
       display: flex;
     }
     &-list-item {
-      
       position: relative;
 
     }
@@ -160,7 +151,7 @@
 
 /*--Navigation-list-link: Mobile--*/
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .navigation-list-link {
     position: relative;
     display: inline-block;

@@ -19,6 +19,10 @@
    .menu-buttons-burger.is-open .icon-cross {
       display: none;
    }
+   .menu-buttons-burger:hover .menu-buttons-icon,
+   .menu-buttons-burger:active .menu-buttons-icon {
+      fill: $bright-accent-color;
+   } 
    
 }
 

@@ -41,6 +41,7 @@
 
 @media screen and (min-width: 767px) {
   .hero {
+    margin-top: 80px;
     max-width: 768px;
     min-height: 400px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/bg-tablet.jpg);
@@ -58,6 +59,7 @@
 
 @media screen and (min-width: 1200px) {
   .hero {
+    margin-top: 80px;
     max-width: 1600px;
     height: 600px;
     background-color: $hero-footer-bg-color;
