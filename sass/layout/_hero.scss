@@ -19,8 +19,7 @@
     
   }
 }
-/*--Mobile--*/
-
+/*--Hero: Mobile--*/
 @media screen and (max-width: 767px) {
   .hero {
     margin-top: 60px;
@@ -37,9 +36,8 @@
   }
 }
 
-/*--Tablet--*/
-
-@media screen and (min-width: 767px) {
+/*--Hero: Tablet--*/
+@media screen and (min-width: 768px) {
   .hero {
     margin-top: 80px;
     max-width: 768px;
@@ -55,8 +53,7 @@
   }
 }
 
-/*--Desktop--*/
-
+/*--Hero: Desktop--*/
 @media screen and (min-width: 1200px) {
   .hero {
     margin-top: 80px;

@@ -3,26 +3,23 @@
   position: relative;
   width: 450px;
   height: 609px;
-  transform: translate(-50%, -50%) scale(1);
   background: $titel-accent-bg-color;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transition: all 500ms linear 250ms;
   padding: 40px;
-  
+  margin: 0 auto;
 }
 
 
 /*--Modal: Desktop--*/
 @media screen and (min-width: 1200px) {
   .modal {
-    position: absolute;
-    top: 50%;
-    left: 50%;
     width: 528px;
     height: 581px;
   }
 }
+
 /*--Close-button: COMMON--*/
 .close-button {
   position: absolute;
@@ -42,6 +39,7 @@
    fill: $bright-accent-color;
  }
 }
+
 /*--Icon-close-button: COMMON--*/
 .icon-close-button {
   position: absolute;
@@ -50,6 +48,7 @@
   transform: translate(-50%, -50%);
 }
 
+/*--Backdrop: COMMON--*/
 .backdrop {
   position: fixed;
   top: 0;
@@ -67,8 +66,23 @@
    transition: all 500ms linear 500ms; 
   }
   &.is-hidden .modal {
-    transform: translate(-50%, -50%) scale(0);
     transition: all 500ms linear 0ms;
+  }
+}
+
+
+/*--Backdrop: Tablet--*/
+@media screen and (min-width: 767px) {
+  .backdrop {
+    padding: 208px 0;
+  }
+}
+
+
+/*--Backdrop: Desktop--*/
+@media screen and (min-width: 1200px) {
+  .backdrop {
+    padding: 222px 0;
   }
 }
 

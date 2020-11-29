@@ -1,6 +1,5 @@
 
 /*--Team: Mobile & Tablet--*/
-
 @media screen and (max-width:767px) {
   .team {
     margin-top: 60px;
@@ -25,7 +24,6 @@
 }
 
 /*--Team: Desktop--*/
-
 @media screen and (min-width: 1200px) {
   .team {
     background-color: $secondary-bg-color;
@@ -45,8 +43,6 @@
 
 
 /*--Staff: COMMON--*/
-
-
 .staff {
   &-info {
     padding: 30px;
@@ -72,15 +68,15 @@
 }
 
 /*--Staff: Mobile--*/
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 480px) {
   .staff {
     &-list {
       display: block;
     }
   }
 }
-/*--Staff: Tablet--*/
 
+/*--Staff: Tablet--*/
 @media screen and (max-width: 1199px) {
 .staff {
     &-list {
@@ -92,7 +88,6 @@
 }
 
 /*--Staff: Desktop--*/
-
 @media screen and (min-width: 1200px) {
   .staff-list {
     display: flex;
@@ -101,7 +96,6 @@
 
 
 /*--team-list-item: COMMON--*/
-
 .team-list-item {
   background: $titel-accent-bg-color;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -109,7 +103,6 @@
 }
 
 /*--team-list-item: Mobile--*/
-
 @media screen and (max-width: 767px) {
   .team-list-item {
     display: block;
@@ -122,7 +115,6 @@
 }
 
 /*--team-list-item: Tablet--*/
-
 @media screen and (max-width: 1199px) {
   .team-list-item:not(:nth-last-child(-n+2)) {
     margin-bottom: 30px;
@@ -130,7 +122,6 @@
 } 
 
 /*--team-list-item: Desktop--*/
-
 @media screen and (min-width: 1200px) {
   .team-list-item:not(:last-child) {
     margin-right: 30px;

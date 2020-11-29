@@ -55,58 +55,48 @@
   color: $bright-accent-color;
 }
 
+/*--Navigation: COMMON--*/
+.navigation {
+  display: flex;
+  align-items: center;
+
+  &-list-item { 
+    position: relative;
+  }
+  &-list {
+    display: flex;
+  }
+  
+}
+
+
 
 /*--Navigation: Mobile--*/
-
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .navigation {
-    display: flex;
-    align-items: center;
-
-    &-list-item { 
-      position: relative;
-    }
-
     &-list-item:not(:last-child) {
       margin-bottom: 40px;
+    }
+    &-list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
   }
 }
 
 /*--Navigation: Tablet--*/
-
 @media screen and (min-width: 767px) {
-  .navigation {
-      display: flex;
-      align-items: center;
-
-    &-list {
-      display: flex;
-    }
-    &-list-item {
-      position: relative;
-
-    }
-    &-list-item:not(:last-child) {
-      margin-right: 50px;
-    }
+  .navigation-list-item:not(:last-child) {
+    margin-right: 50px;
   }
 }
 
-/*--Navigation: Desktop--*/
 
+/*--Navigation: Desktop--*/
 @media screen and (min-width: 1200px) {
   .navigation {
-      display: flex;
-      align-items: center;
-      width: 100%;
-    &-list {
-      display: flex;
-    }
-    &-list-item {
-      position: relative;
-    }
-    
+    width: 100%;
   }
 }
 
